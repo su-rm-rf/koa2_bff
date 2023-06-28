@@ -1,0 +1,28 @@
+{
+  "name": "mono_be",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev:bff": "cross-env NODE_ENV=development BASE_ENV=development nodemon ./src/main.ts",
+    "test:bff": "cross-env NODE_ENV=test BASE_ENV=development nodemon ./src/main.ts",
+    "prod:bff": "cross-env NODE_ENV=production BASE_ENV=production nodemon ./src/main.ts",
+    "test:unit:bff": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.1.4",
+    "koa": "^2.14.2",
+    "koa-body": "^6.0.1",
+    "koa-router": "^12.0.0",
+    "koa2-cors": "^2.0.6"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.6",
+    "@types/koa-router": "^7.4.4",
+    "@types/node": "^20.3.0"
+  }
+}
